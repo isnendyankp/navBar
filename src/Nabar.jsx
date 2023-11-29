@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 
 const Nabar = () => {
   return (
@@ -10,3 +11,4 @@ export default Nabar
 
 // Progress:
 //  s7-244: create base Nabar component
+//  s7-245: import  useState
