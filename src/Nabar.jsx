@@ -11,7 +11,7 @@ const Nabar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} alt="logo" />
+          <img src={logo} className='logo' alt="logo" />
         </div>
       </div>
     </nav>
@@ -30,3 +30,4 @@ export default Nabar
 //  s7-244: Add nav element with nav-center div
 //  s7-244: Add nav-header div
 //  s7-244: Add img element with logo
+//  s7-244: Add className='logo' to img element
