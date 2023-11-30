@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { links, social } from './data'
+import logo from './logo.svg'
 
 const Nabar = () => {
   return (
@@ -16,3 +17,4 @@ export default Nabar
 //  s7-244: import useState
 //  s7-244: import FaBars
 //  s7-244: import links, social
+//  s7-244: import logo.svg
