@@ -11,7 +11,7 @@ const Nabar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-
+          <img src={logo} alt="logo" />
         </div>
       </div>
     </nav>
@@ -29,3 +29,4 @@ export default Nabar
 //  s7-244: Add showLinks state with default value of false
 //  s7-244: Add nav element with nav-center div
 //  s7-244: Add nav-header div
+//  s7-244: Add img element with logo
