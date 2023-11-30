@@ -5,6 +5,8 @@ import { links, social } from './data'
 import logo from './logo.svg'
 
 const Nabar = () => {
+  const [showLinks, setShowLinks] = useState(false)
+
   return (
     <div>Nabar</div>
   )
@@ -18,3 +20,4 @@ export default Nabar
 //  s7-244: import FaBars
 //  s7-244: import links, social
 //  s7-244: import logo.svg
+//  s7-244: Add showLinks state with default value of false
