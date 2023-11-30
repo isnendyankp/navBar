@@ -8,7 +8,11 @@ const Nabar = () => {
   const [showLinks, setShowLinks] = useState(false)
 
   return (
-    <div>Nabar</div>
+    <nav>
+      <div className="nav-center">
+
+      </div>
+    </nav>
   )
 }
 
@@ -21,3 +25,4 @@ export default Nabar
 //  s7-244: import links, social
 //  s7-244: import logo.svg
 //  s7-244: Add showLinks state with default value of false
+//  s7-244: Add nav element with nav-center div
