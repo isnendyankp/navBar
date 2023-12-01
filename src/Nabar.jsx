@@ -7,6 +7,10 @@ import logo from './logo.svg'
 const Nabar = () => {
   const [showLinks, setShowLinks] = useState(false)
 
+  const toggleLinks = () => {
+    setShowLinks(!showLinks)
+  }
+
   return (
     <nav>
       <div className="nav-center">
@@ -53,3 +57,4 @@ export default Nabar
 //  s7-244: Add return li with key={id}
 //  s7-244: create a element with passed url and text
 //  s7-244: Add showLinks && to div
+//  s7-244: create toggleLinks function
