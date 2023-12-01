@@ -16,7 +16,7 @@ const Nabar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} className="logo" alt="logo" />
-          <button className="nav-toggle">
+          <button className="nav-toggle" onClick={toggleLinks}>
             <FaBars />
           </button>
         </div>
@@ -58,3 +58,4 @@ export default Nabar
 //  s7-244: create a element with passed url and text
 //  s7-244: Add showLinks && to div
 //  s7-244: create toggleLinks function
+//  s7-244: Add onClick with toggleLinks to button
