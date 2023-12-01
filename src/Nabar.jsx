@@ -11,22 +11,26 @@ const Nabar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} className='logo' alt="logo" />
+          <img src={logo} className="logo" alt="logo" />
           <button className="nav-toggle">
             <FaBars />
           </button>
         </div>
-        <div className="links-container">
-          {links.map((link) => {
-            const {id, url, text} = link
-            return <li key={id}>
-              <a href={url}>{text}</a>
-            </li>
-          })}
-        </div>
+        {showLinks && (
+          <div className="links-container">
+            {links.map((link) => {
+              const { id, url, text } = link;
+              return (
+                <li key={id}>
+                  <a href={url}>{text}</a>
+                </li>
+              );
+            })}
+          </div>
+        )}
       </div>
     </nav>
-  )
+  );
 }
 
 export default Nabar
@@ -48,3 +52,4 @@ export default Nabar
 //  s7-244: Add define id,url,text equal to link
 //  s7-244: Add return li with key={id}
 //  s7-244: create a element with passed url and text
+//  s7-244: Add showLinks && to div
