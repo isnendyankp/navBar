@@ -17,7 +17,10 @@ const Nabar = () => {
           </button>
         </div>
         <div className="links-container">
-          
+          {links.map((link) => {
+
+            } 
+          )}
         </div>
       </div>
     </nav>
@@ -39,3 +42,4 @@ export default Nabar
 //  s7-244: Add className='logo' to img element
 //  s7-244: Add button element with nav-toggle className
 //  s7-244: Add div with links-container className
+//  s7-244: Add links.map() to div
