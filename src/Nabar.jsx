@@ -18,9 +18,9 @@ const Nabar = () => {
         </div>
         <div className="links-container">
           {links.map((link) => {
-
-            } 
-          )}
+            const {id, url, text} = link
+          
+          })}
         </div>
       </div>
     </nav>
@@ -43,3 +43,4 @@ export default Nabar
 //  s7-244: Add button element with nav-toggle className
 //  s7-244: Add div with links-container className
 //  s7-244: Add links.map() to div
+//  s7-244: Add define id,url,text equal to link
