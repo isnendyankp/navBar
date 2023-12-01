@@ -20,7 +20,7 @@ const Nabar = () => {
           {links.map((link) => {
             const {id, url, text} = link
             return <li key={id}>
-            
+              <a href={url}>{text}</a>
             </li>
           })}
         </div>
@@ -47,3 +47,4 @@ export default Nabar
 //  s7-244: Add links.map() to div
 //  s7-244: Add define id,url,text equal to link
 //  s7-244: Add return li with key={id}
+//  s7-244: create a element with passed url and text
