@@ -16,6 +16,9 @@ const Nabar = () => {
             <FaBars />
           </button>
         </div>
+        <div className="links-container">
+          
+        </div>
       </div>
     </nav>
   )
@@ -35,3 +38,4 @@ export default Nabar
 //  s7-244: Add img element with logo
 //  s7-244: Add className='logo' to img element
 //  s7-244: Add button element with nav-toggle className
+//  s7-244: Add div with links-container className
