@@ -253,3 +253,8 @@ ul {
   margin-top: 1rem;
 }
 /* ============= PROJECT CSS =============== */
+
+nav {
+  background: var(--white);
+  box-shadow: var(--shadow-1);
+}
