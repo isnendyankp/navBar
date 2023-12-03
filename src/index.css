@@ -326,4 +326,7 @@ nav {
     justify-content: space-between;
     padding: 1rem;
   }
+  .links-container {
+    height: auto !important;
+  }
 }
