@@ -333,4 +333,7 @@ nav {
     display: flex;
     gap: 0.5rem;
   }
+  .links a {
+    padding: 0;
+  }
 }
