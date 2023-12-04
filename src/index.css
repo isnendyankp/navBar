@@ -336,4 +336,8 @@ nav {
   .links a {
     padding: 0;
   }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
 }
