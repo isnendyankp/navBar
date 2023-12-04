@@ -344,4 +344,8 @@ nav {
     display: flex;
     gap: 0.5rem;
   }
+  .social-icons a {
+    color: var(--primary-500);
+    transition: var(--transition);
+  }
 }
