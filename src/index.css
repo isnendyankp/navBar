@@ -340,4 +340,8 @@ nav {
     padding: 0;
     background: transparent;
   }
+  .social-icons {
+    display: flex;
+    gap: 0.5rem;
+  }
 }
