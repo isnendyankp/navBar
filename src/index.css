@@ -348,4 +348,7 @@ nav {
     color: var(--primary-500);
     transition: var(--transition);
   }
+  .social-icons a:hover {
+    color: var(--primary-300);
+  }
 }
