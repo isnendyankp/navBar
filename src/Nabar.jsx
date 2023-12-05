@@ -8,8 +8,13 @@ const Nabar = () => {
   const [showLinks, setShowLinks] = useState(false)
   const linksContainerRef = useRef(null)
   const linksRef = useRef(null)
+
   const toggleLinks = () => {
     setShowLinks(!showLinks)
+  }
+
+  const linkStyles = {
+
   }
 
   return (
@@ -63,7 +68,8 @@ export default Nabar
 //  s7-244: Add onClick with toggleLinks to button
 //  s7-244: Add ternary operator to className of div
 //  s7-244: Add ul element with links className
-//  s7-244: create linksCponatinerRef with useRef
-//  s7-244: create linksRef with useRef
-//  s7-244: Add ref={linksContainerRef} to div
-//  s7-244: Add ref={linksRef} to ul
+//  s7-247: create linksCponatinerRef with useRef
+//  s7-247: create linksRef with useRef
+//  s7-247: Add ref={linksContainerRef} to div
+//  s7-247: Add ref={linksRef} to ul
+//  s7-247: cr8 linkStyles object
