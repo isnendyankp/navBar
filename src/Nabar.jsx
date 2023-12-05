@@ -27,7 +27,7 @@ const Nabar = () => {
           </button>
         </div>
 
-        <div className="links-container" ref={linksContainerRef}>
+        <div className="links-container" ref={linksContainerRef} style={linkStyles}>
           <ul className="links" ref={linksRef}>
             {links.map((link) => {
               const { id, url, text } = link;
@@ -73,3 +73,4 @@ export default Nabar
 //  s7-247: Add ref={linksContainerRef} to div
 //  s7-247: Add ref={linksRef} to ul
 //  s7-247: cr8 linkStyles object
+//  s7-247: pass in linkStyles to div
