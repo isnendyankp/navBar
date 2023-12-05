@@ -27,14 +27,16 @@ const Nabar = () => {
             'links-container container'
           }
         >
-          {links.map((link) => {
-            const { id, url, text } = link;
-            return (
-              <li key={id}>
-                <a href={url}>{text}</a>
-              </li>
-            );
-          })}
+          <ul className="links">
+            {links.map((link) => {
+              const { id, url, text } = link;
+              return (
+                <li key={id}>
+                  <a href={url}>{text}</a>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </nav>
@@ -64,3 +66,4 @@ export default Nabar
 //  s7-244: create toggleLinks function
 //  s7-244: Add onClick with toggleLinks to button
 //  s7-244: Add ternary operator to className of div
+//  s7-244: Add ul element with links className
