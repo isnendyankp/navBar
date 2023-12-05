@@ -13,9 +13,11 @@ const Nabar = () => {
     setShowLinks(!showLinks)
   }
 
-  const linkStyles = {
-
-  }
+ const linkStyles = {
+   height: showLinks
+     ? `${linksRef.current.getBoundingClientRect().height}px`
+     : '0px',
+ };
 
   return (
     <nav>
@@ -74,3 +76,4 @@ export default Nabar
 //  s7-247: Add ref={linksRef} to ul
 //  s7-247: cr8 linkStyles object
 //  s7-247: pass in linkStyles to div
+//  s7-247: Add height with getBoundingClientRect().height to linkStyles object
