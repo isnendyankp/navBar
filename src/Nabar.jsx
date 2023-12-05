@@ -6,6 +6,7 @@ import logo from './logo.svg'
 
 const Nabar = () => {
   const [showLinks, setShowLinks] = useState(false)
+  const linksContainerRef = useRef(null)
 
   const toggleLinks = () => {
     setShowLinks(!showLinks)
@@ -67,3 +68,4 @@ export default Nabar
 //  s7-244: Add onClick with toggleLinks to button
 //  s7-244: Add ternary operator to className of div
 //  s7-244: Add ul element with links className
+//  s7-244: create linksCponatinerRef with useRef
