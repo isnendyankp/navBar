@@ -23,7 +23,7 @@ const Nabar = () => {
         </div>
 
         <div className="links-container" ref={linksContainerRef}>
-          <ul className="links">
+          <ul className="links" ref={linksRef}>
             {links.map((link) => {
               const { id, url, text } = link;
               return (
@@ -66,3 +66,4 @@ export default Nabar
 //  s7-244: create linksCponatinerRef with useRef
 //  s7-244: create linksRef with useRef
 //  s7-244: Add ref={linksContainerRef} to div
+//  s7-244: Add ref={linksRef} to ul
