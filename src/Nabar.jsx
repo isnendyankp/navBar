@@ -22,12 +22,7 @@ const Nabar = () => {
           </button>
         </div>
 
-        <div 
-          className={ 
-            showLinks ? 'links-container show container' : 
-            'links-container container'
-          }
-        >
+        <div className="links-container" ref={linksContainerRef}>
           <ul className="links">
             {links.map((link) => {
               const { id, url, text } = link;
@@ -70,3 +65,4 @@ export default Nabar
 //  s7-244: Add ul element with links className
 //  s7-244: create linksCponatinerRef with useRef
 //  s7-244: create linksRef with useRef
+//  s7-244: Add ref={linksContainerRef} to div
