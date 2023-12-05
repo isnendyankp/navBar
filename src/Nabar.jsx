@@ -20,18 +20,22 @@ const Nabar = () => {
             <FaBars />
           </button>
         </div>
-        {showLinks && (
-          <div className="links-container">
-            {links.map((link) => {
-              const { id, url, text } = link;
-              return (
-                <li key={id}>
-                  <a href={url}>{text}</a>
-                </li>
-              );
-            })}
-          </div>
-        )}
+
+        <div 
+          className={ 
+            showLinks ? 'links-container show container' : 
+            'links-container container'
+          }
+        >
+          {links.map((link) => {
+            const { id, url, text } = link;
+            return (
+              <li key={id}>
+                <a href={url}>{text}</a>
+              </li>
+            );
+          })}
+        </div>
       </div>
     </nav>
   );
@@ -59,3 +63,4 @@ export default Nabar
 //  s7-244: Add showLinks && to div
 //  s7-244: create toggleLinks function
 //  s7-244: Add onClick with toggleLinks to button
+//  s7-244: Add ternary operator to className of div
