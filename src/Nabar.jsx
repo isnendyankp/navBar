@@ -47,7 +47,7 @@ const Nabar = () => {
         </div>
         {/* social links */}
         <ul className='social-icons'>
-            {social.map(() => {
+            {social.map((socialIcon) => {
 
             })}
         </ul>
@@ -89,3 +89,4 @@ export default Nabar
 //  s7-247: Add height with getBoundingClientRect().height to linkStyles object
 //  s7-249: Add social-icons ul
 //  s7-249: Add social.map() to ul
+//  s7-249: pass in socialIcon to map
