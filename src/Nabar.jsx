@@ -47,17 +47,19 @@ const Navbar = () => {
         <ul className="social-icons">
           {social.map((socialIcon) => {
             const { id, url, icon } = socialIcon;
-            <li key={id}>
-              <a href={url}>{icon}</a>
-            </li>;
+            return (
+              <li key={id}>
+                <a href={url}>{icon}</a>
+              </li>
+            );
           })}
         </ul>
       </div>
     </nav>
   );
 };
+export default Navbar;
 
-export default Nabar;
 
 // Progress:
 //  s7-244: create base Nabar component
