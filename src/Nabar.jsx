@@ -50,7 +50,7 @@ const Nabar = () => {
             {social.map((socialIcon) => {
               const { id, url, icon } = socialIcon;
               <li key={id}>
-
+                <a href={url}></a>
               </li>
             })}
         </ul>
@@ -95,3 +95,4 @@ export default Nabar
 //  s7-249: pass in socialIcon to map
 //  s7-249: destructure id, url, icon from socialIcon
 //  s7-249: Add li with key id
+//  s7-249: pass in url with created a element
