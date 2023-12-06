@@ -1,23 +1,21 @@
-import React from 'react'
-import { useState } from 'react'
-import { FaBars } from 'react-icons/fa'
-import { links, social } from './data'
-import logo from './logo.svg'
-
-const Nabar = () => {
-  const [showLinks, setShowLinks] = useState(false)
-  const linksContainerRef = useRef(null)
-  const linksRef = useRef(null)
+import { useState, useRef } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { links, social } from './data';
+import logo from './logo.svg';
+const Navbar = () => {
+  const [showLinks, setShowLinks] = useState(false);
+  const linksContainerRef = useRef(null);
+  const linksRef = useRef(null);
 
   const toggleLinks = () => {
-    setShowLinks(!showLinks)
-  }
+    setShowLinks(!showLinks);
+  };
 
- const linkStyles = {
-   height: showLinks
-     ? `${linksRef.current.getBoundingClientRect().height}px`
-     : '0px',
- };
+  const linkStyles = {
+    height: showLinks
+      ? `${linksRef.current.getBoundingClientRect().height}px`
+      : '0px',
+  };
 
   return (
     <nav>
@@ -46,20 +44,20 @@ const Nabar = () => {
           </ul>
         </div>
         {/* social links */}
-        <ul className='social-icons'>
-            {social.map((socialIcon) => {
-              const { id, url, icon } = socialIcon;
-              <li key={id}>
-                <a href={url}>{icon}</a>
-              </li>
-            })}
+        <ul className="social-icons">
+          {social.map((socialIcon) => {
+            const { id, url, icon } = socialIcon;
+            <li key={id}>
+              <a href={url}>{icon}</a>
+            </li>;
+          })}
         </ul>
       </div>
     </nav>
   );
-}
+};
 
-export default Nabar
+export default Nabar;
 
 // Progress:
 //  s7-244: create base Nabar component
