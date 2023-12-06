@@ -29,7 +29,11 @@ const Nabar = () => {
           </button>
         </div>
 
-        <div className="links-container" ref={linksContainerRef} style={linkStyles}>
+        <div
+          className="links-container"
+          ref={linksContainerRef}
+          style={linkStyles}
+        >
           <ul className="links" ref={linksRef}>
             {links.map((link) => {
               const { id, url, text } = link;
@@ -41,6 +45,10 @@ const Nabar = () => {
             })}
           </ul>
         </div>
+        {/* social links */}
+        <ul className='social-icons'>
+
+        </ul>
       </div>
     </nav>
   );
@@ -77,3 +85,4 @@ export default Nabar
 //  s7-247: cr8 linkStyles object
 //  s7-247: pass in linkStyles to div
 //  s7-247: Add height with getBoundingClientRect().height to linkStyles object
+//  s7-249: Add social-icons ul
