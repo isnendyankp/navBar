@@ -48,7 +48,7 @@ const Nabar = () => {
         {/* social links */}
         <ul className='social-icons'>
             {social.map((socialIcon) => {
-
+              const { id, url, icon } = socialIcon;
             })}
         </ul>
       </div>
@@ -90,3 +90,4 @@ export default Nabar
 //  s7-249: Add social-icons ul
 //  s7-249: Add social.map() to ul
 //  s7-249: pass in socialIcon to map
+//  s7-249: destructure id, url, icon from socialIcon
